@@ -24,6 +24,8 @@ public class UserApiController {
 		userservice.회원가입(user);
 		return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
 		// ResponseDto의 data는 1
+		// ResponseDto의 state는 HttpStatus.OK.value()
+		// 이 값을 요청한 user.js의 save:function()으로 돌려준다
 	}
 	
 }

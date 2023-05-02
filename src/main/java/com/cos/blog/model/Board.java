@@ -52,6 +52,7 @@ public class Board {
     
     //@JoinColumn DB는 Users라는 객체를 인식하지 못하므로 해댱 어노테이션을통해 인지시켜줌 //Users테이블을 통째로 들고온다    				   
     //@joinColumn(name="userId") Board테이블에 저장될때 Users테이블이 해당 이름으로 저장 됨
+    //데이테베이스에서 보여질때는 UsersId의 값은 Users테이블의 @Id로 지정한 id값으로 보임
     @ManyToOne(fetch = FetchType.EAGER)	 //Many = Board, User = One
 	@JoinColumn(name="userId")
 	private Users users;

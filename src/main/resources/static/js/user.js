@@ -21,15 +21,17 @@ let index ={
 			data:JSON.stringify(data),
 			contentType:"application/json; charset=utf-8",
 			dataType:"json"
-		}).done(function(resp){
+		}).done(function(resp){		
+			//정상작동시 리턴된 ResponseDto<Integer>(HttpStatus.OK.value(), 1)를 받음	
+			//ResponseDto의 state는 HttpStatus.OK.value()
+			//ResponseDto의 data는 1
+			console.log(resp.state);				
 			alert("회원가입이 완료되었습니다.");
 			location.href="/";
 		}).fail(function(error){
 			alert(JSON.stringify(error));
 		});
 	}
-	
-	
 	
 	
 }
