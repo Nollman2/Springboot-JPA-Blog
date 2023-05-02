@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller //jsp파일을 넘겨주므로 Controller를 사용 //데이터를 넘겨줄때는 RestController
-public class UserContoller {
+public class UserController {
 	
 	//회원가입페이지
 	@GetMapping("/auth/joinForm") //localhost:8008/auth/joinForm의 주소로 요청시
