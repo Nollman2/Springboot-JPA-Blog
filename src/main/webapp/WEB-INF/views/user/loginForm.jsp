@@ -3,7 +3,7 @@
 <%@ include file="../layout/header.jsp"%>
 
 <div class="container">
-
+	<!-- 시큐리티로그인을 위해 action은 SecurityConfig의 loginProcessingUrl("/auth/loginProc")로 지정 -->
 	<form action="/auth/loginProc" method="POST">
 		<div class="form-group">
 			<label for="username">username</label> <input type="text" name="username" class="form-control" placeholder="Enter username" id="username">
